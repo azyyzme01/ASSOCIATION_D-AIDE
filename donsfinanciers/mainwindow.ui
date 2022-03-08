@@ -1,0 +1,1991 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1198</width>
+    <height>718</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>1151</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(89, 97, 255);</string>
+    </property>
+    <property name="currentIndex">
+     <number>6</number>
+    </property>
+    <widget class="QWidget" name="acceuil">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QPushButton" name="adherant">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>310</y>
+        <width>161</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;Poor Richard&quot;;</string>
+      </property>
+      <property name="text">
+       <string>GESTION ADHERANT</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="logistique">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>540</y>
+        <width>191</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;Poor Richard&quot;;</string>
+      </property>
+      <property name="text">
+       <string>GESTION LOGISTIQUE</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="famille">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>100</y>
+        <width>151</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;Poor Richard&quot;;</string>
+      </property>
+      <property name="text">
+       <string>GESTION FAMILLE</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="finance">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>100</y>
+        <width>221</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;Poor Richard&quot;;</string>
+      </property>
+      <property name="text">
+       <string>GESTION DONS FINANCIERS</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="physiques">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>530</y>
+        <width>211</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;Poor Richard&quot;;</string>
+      </property>
+      <property name="text">
+       <string>GESTION DONS PHYSIQUES</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="adherant_2">
+     <widget class="QPushButton" name="retour_adherant">
+      <property name="geometry">
+       <rect>
+        <x>1050</x>
+        <y>620</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>retour</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="adherant_4">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>230</y>
+        <width>191</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Adherant</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="adherant_5">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>300</y>
+        <width>191</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>simple membre</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="adherant_3">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <widget class="QPushButton" name="retour_adherant_3">
+      <property name="geometry">
+       <rect>
+        <x>1040</x>
+        <y>610</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>retour</string>
+      </property>
+     </widget>
+     <widget class="QToolBox" name="toolBox_4">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>100</y>
+        <width>971</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_10">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>971</width>
+         <height>421</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset>
+         <normaloff>../Downloads/icons8-fournisseur-100.png</normaloff>../Downloads/icons8-fournisseur-100.png</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>Gestion des adherants</string>
+       </attribute>
+       <widget class="QTableWidget" name="tableWidget_7">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>20</y>
+          <width>711</width>
+          <height>311</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <column>
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Nom</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Prénom</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Email</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Téléphone</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Ville</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>importer image</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_7">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>10</y>
+          <width>161</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>GroupBox</string>
+        </property>
+        <widget class="QPushButton" name="pushButton_15">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nouveaux</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-add-user-male-100.png</normaloff>../Downloads/icons8-add-user-male-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_16">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Modifier</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-registration-100.png</normaloff>../Downloads/icons8-registration-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_17">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>130</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Supprimer</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-denied-100.png</normaloff>../Downloads/icons8-denied-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_18">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>180</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Generer PDF</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-print-100.png</normaloff>../Downloads/icons8-print-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_19">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>230</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Rechercher</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-search-100.png</normaloff>../Downloads/icons8-search-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_30">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>280</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Localiser</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-location-100.png</normaloff>../Downloads/icons8-location-100.png</iconset>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="simplemembre">
+     <widget class="QToolBox" name="toolBox_5">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>110</y>
+        <width>971</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_11">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>971</width>
+         <height>421</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset>
+         <normaloff>../Downloads/icons8-fournisseur-100.png</normaloff>../Downloads/icons8-fournisseur-100.png</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>Gestion des simple membres</string>
+       </attribute>
+       <widget class="QTableWidget" name="tableWidget_8">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>20</y>
+          <width>711</width>
+          <height>311</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <column>
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Nom</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Prénom</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Email</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Téléphone</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Ville</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>importer image</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_8">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>10</y>
+          <width>161</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>GroupBox</string>
+        </property>
+        <widget class="QPushButton" name="pushButton_31">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nouveaux</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-add-user-male-100.png</normaloff>../Downloads/icons8-add-user-male-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_32">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Modifier</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-registration-100.png</normaloff>../Downloads/icons8-registration-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_33">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>130</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Supprimer</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-denied-100.png</normaloff>../Downloads/icons8-denied-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_34">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>180</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Imprimer PDF</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-print-100.png</normaloff>../Downloads/icons8-print-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_35">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>230</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Rechercher</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-search-100.png</normaloff>../Downloads/icons8-search-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_36">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>280</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Localiser</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-location-100.png</normaloff>../Downloads/icons8-location-100.png</iconset>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="retour_adherant_2">
+      <property name="geometry">
+       <rect>
+        <x>1040</x>
+        <y>620</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>retour</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="famille_2">
+     <widget class="QPushButton" name="retour_famille">
+      <property name="geometry">
+       <rect>
+        <x>1040</x>
+        <y>530</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>retour</string>
+      </property>
+     </widget>
+     <widget class="QToolBox" name="toolBox_6">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>20</y>
+        <width>971</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="page_12">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>100</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset>
+         <normaloff>../../Downloads/icons8-fournisseur-100.png</normaloff>../../Downloads/icons8-fournisseur-100.png</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>ajouter familles</string>
+       </attribute>
+       <widget class="QTableWidget" name="tableWidget_9">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>20</y>
+          <width>711</width>
+          <height>311</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <column>
+         <property name="text">
+          <string>CIN</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Nom</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Prénom</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>localisation</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>nbr enfants</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_9">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>10</y>
+          <width>161</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>GroupBox</string>
+        </property>
+        <widget class="QPushButton" name="pushButton_37">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>110</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nouveaux</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../Downloads/icons8-add-user-male-100.png</normaloff>../../Downloads/icons8-add-user-male-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_38">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>180</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Modifier</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../Downloads/icons8-registration-100.png</normaloff>../../Downloads/icons8-registration-100.png</iconset>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_13">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>971</width>
+         <height>391</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset>
+         <normaloff>../../Downloads/icons8-livraison-de-nourriture-100 (1).png</normaloff>../../Downloads/icons8-livraison-de-nourriture-100 (1).png</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>afficher famille</string>
+       </attribute>
+       <widget class="QTableWidget" name="tableWidget_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>761</width>
+          <height>311</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>CIN</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Nom</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Prenom</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Localisation</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>nbr enfants</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_10">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>20</y>
+          <width>161</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>GroupBox</string>
+        </property>
+        <widget class="QPushButton" name="pushButton_43">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>100</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Afficher</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../Downloads/icons8-view-64.png</normaloff>../../Downloads/icons8-view-64.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_39">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>200</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Supprimer</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../Downloads/icons8-denied-100.png</normaloff>../../Downloads/icons8-denied-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_40">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>240</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Trier</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../Downloads/icons8-denied-100.png</normaloff>../../Downloads/icons8-denied-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_41">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>150</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>creer QR CODE</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../Downloads/icons8-denied-100.png</normaloff>../../Downloads/icons8-denied-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_42">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>280</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Calculer</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../Downloads/icons8-denied-100.png</normaloff>../../Downloads/icons8-denied-100.png</iconset>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="finance_2">
+     <widget class="QPushButton" name="retour_finance">
+      <property name="geometry">
+       <rect>
+        <x>1050</x>
+        <y>640</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>retour</string>
+      </property>
+     </widget>
+     <widget class="QToolBox" name="toolBox_2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>120</y>
+        <width>971</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>971</width>
+         <height>361</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset>
+         <normaloff>../Downloads/icons8-fournisseur-100.png</normaloff>../Downloads/icons8-fournisseur-100.png</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>Ajouter dons financiers</string>
+       </attribute>
+       <widget class="QTableWidget" name="tableWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>30</y>
+          <width>711</width>
+          <height>311</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <column>
+         <property name="text">
+          <string>num_operation</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>somme</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>non_donneur</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>10</y>
+          <width>161</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>GroupBox</string>
+        </property>
+        <widget class="QPushButton" name="b_ajouter">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>130</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nouveaux</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-add-user-male-100.png</normaloff>../Downloads/icons8-add-user-male-100.png</iconset>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLineEdit" name="num_operation">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>70</y>
+          <width>91</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="somme">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>70</y>
+          <width>91</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="nom_donneur">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>70</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_5">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>971</width>
+         <height>361</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset>
+         <normaloff>../Downloads/icons8-livraison-de-nourriture-100 (1).png</normaloff>../Downloads/icons8-livraison-de-nourriture-100 (1).png</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>afficher dons financiers</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_4">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>20</y>
+          <width>161</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>GroupBox</string>
+        </property>
+        <widget class="QPushButton" name="pushButton_20">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Modifier</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-registration-100.png</normaloff>../Downloads/icons8-registration-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="bp_supprimer">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>130</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>supprimer</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-data-backup-64.png</normaloff>../Downloads/icons8-data-backup-64.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_22">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>180</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>fichier exel</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-print-100.png</normaloff>../Downloads/icons8-print-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_23">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>230</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Rechercher</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-search-100.png</normaloff>../Downloads/icons8-search-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_24">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>280</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Trier</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-location-100.png</normaloff>../Downloads/icons8-location-100.png</iconset>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QTableView" name="tab_dons_financiers">
+        <property name="geometry">
+         <rect>
+          <x>45</x>
+          <y>21</y>
+          <width>721</width>
+          <height>321</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>260</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>num à supprimer</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="id_supp">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>260</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_6">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>971</width>
+         <height>361</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset>
+         <normaloff>../Downloads/icons8-location-100.png</normaloff>../Downloads/icons8-location-100.png</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>statistiques</string>
+       </attribute>
+       <widget class="QGraphicsView" name="graphicsView_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>0</y>
+          <width>951</width>
+          <height>341</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_14">
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>100</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>id_operation</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>320</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>nom_donor</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>200</y>
+        <width>56</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>somme</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="idedit">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>100</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="sommeedit">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>200</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="nomedit">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>320</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="updatebtn">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>300</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>update</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="logistique_2">
+     <widget class="QPushButton" name="retour_logistique">
+      <property name="geometry">
+       <rect>
+        <x>1030</x>
+        <y>540</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>retour</string>
+      </property>
+     </widget>
+     <widget class="QToolBox" name="toolBox">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>50</y>
+        <width>971</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>100</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset>
+         <normaloff>../Downloads/icons8-fournisseur-100.png</normaloff>../Downloads/icons8-fournisseur-100.png</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>Gestion Livreurs</string>
+       </attribute>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>20</y>
+          <width>711</width>
+          <height>311</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <column>
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Nom</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Prénom</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Email</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Téléphone</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Ville</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Code Postal</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>10</y>
+          <width>161</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>GroupBox</string>
+        </property>
+        <widget class="QPushButton" name="pushButton">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nouveaux</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-add-user-male-100.png</normaloff>../Downloads/icons8-add-user-male-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Modifier</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-registration-100.png</normaloff>../Downloads/icons8-registration-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>130</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Supprimer</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-denied-100.png</normaloff>../Downloads/icons8-denied-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>180</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Imprimer PDF</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-print-100.png</normaloff>../Downloads/icons8-print-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>230</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Rechercher</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-search-100.png</normaloff>../Downloads/icons8-search-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_6">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>280</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Localiser</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-location-100.png</normaloff>../Downloads/icons8-location-100.png</iconset>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>971</width>
+         <height>361</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset>
+         <normaloff>../Downloads/icons8-livraison-de-nourriture-100 (1).png</normaloff>../Downloads/icons8-livraison-de-nourriture-100 (1).png</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>Bon de Livraisons</string>
+       </attribute>
+       <widget class="QTableWidget" name="tableWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>761</width>
+          <height>311</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Nom Famille</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Livereur</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Téléphone Famille</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Adresse</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Ville</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Code Postal</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>20</y>
+          <width>161</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>GroupBox</string>
+        </property>
+        <widget class="QPushButton" name="pushButton_7">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Détails</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-view-64.png</normaloff>../Downloads/icons8-view-64.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_8">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Affectter</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-registration-100.png</normaloff>../Downloads/icons8-registration-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_9">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>130</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Archiver</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-data-backup-64.png</normaloff>../Downloads/icons8-data-backup-64.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_10">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>180</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Imprimer PDF</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-print-100.png</normaloff>../Downloads/icons8-print-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_11">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>230</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Rechercher</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-search-100.png</normaloff>../Downloads/icons8-search-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_12">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>280</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Localiser</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-location-100.png</normaloff>../Downloads/icons8-location-100.png</iconset>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>100</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset>
+         <normaloff>../Downloads/icons8-location-100.png</normaloff>../Downloads/icons8-location-100.png</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>Localisation</string>
+       </attribute>
+       <widget class="QGraphicsView" name="graphicsView">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>0</y>
+          <width>951</width>
+          <height>341</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="physique">
+     <widget class="QPushButton" name="retour_physique">
+      <property name="geometry">
+       <rect>
+        <x>1060</x>
+        <y>630</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>retour</string>
+      </property>
+     </widget>
+     <widget class="QToolBox" name="toolBox_3">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>90</y>
+        <width>971</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="page_7">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>100</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset>
+         <normaloff>../Downloads/icons8-fournisseur-100.png</normaloff>../Downloads/icons8-fournisseur-100.png</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>Ajouter stock</string>
+       </attribute>
+       <widget class="QTableWidget" name="tableWidget_5">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>20</y>
+          <width>711</width>
+          <height>311</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <column>
+         <property name="text">
+          <string>numero </string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>quantite</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>libelle</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>date</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_5">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>10</y>
+          <width>161</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>GroupBox</string>
+        </property>
+        <widget class="QPushButton" name="pushButton_14">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>130</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nouveaux</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-add-user-male-100.png</normaloff>../Downloads/icons8-add-user-male-100.png</iconset>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_8">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>971</width>
+         <height>361</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset>
+         <normaloff>../Downloads/icons8-livraison-de-nourriture-100 (1).png</normaloff>../Downloads/icons8-livraison-de-nourriture-100 (1).png</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>afficher stock</string>
+       </attribute>
+       <widget class="QTableWidget" name="tableWidget_6">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>761</width>
+          <height>311</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>numero</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>qte entrante</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>libelle </string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Date</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>qte sortante</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_6">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>20</y>
+          <width>161</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>GroupBox</string>
+        </property>
+        <widget class="QPushButton" name="pushButton_25">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Modifier</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-registration-100.png</normaloff>../Downloads/icons8-registration-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_26">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>130</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>supprimer</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-data-backup-64.png</normaloff>../Downloads/icons8-data-backup-64.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_27">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>180</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Historique</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-print-100.png</normaloff>../Downloads/icons8-print-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_28">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>230</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Rechercher</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-search-100.png</normaloff>../Downloads/icons8-search-100.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_29">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>280</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Trier</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Downloads/icons8-location-100.png</normaloff>../Downloads/icons8-location-100.png</iconset>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_9">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>100</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset>
+         <normaloff>../Downloads/icons8-location-100.png</normaloff>../Downloads/icons8-location-100.png</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>statistiques</string>
+       </attribute>
+       <widget class="QGraphicsView" name="graphicsView_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>0</y>
+          <width>951</width>
+          <height>341</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1198</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
