@@ -12,24 +12,17 @@ class Adherant
 {
 public:
     Adherant();
-    Adherant(int,QString,QString,QString,int,QString);
-    int getid();
-    QString getnom();
-    QString getprenom();
-    QString getfonction();
-    int gettele();
-    QString getimage();
-    void setid(int);
-    void setnom(QString);
-    void setprenom(QString);
-    void setfonction(QString);
-    void settele(int);
-    void setimage(QString);
-    bool ajouter();
-    QSqlQueryModel* afficher();
-    bool supprimer(int);
-    bool modifier();
-
+        Adherant(int,QString,QString,QString,int,QString);
+QString get_nom(){return nom;};
+QString get_prenom(){return prenom;};
+QString get_fonction(){return fonction;};
+QString get_image(){return image;};
+int get_id(){return id;};
+int get_tele(){return tele;};
+bool ajouter();
+bool modifier();
+bool supprimer(int);
+QSqlQueryModel * afficher();
 
 
 

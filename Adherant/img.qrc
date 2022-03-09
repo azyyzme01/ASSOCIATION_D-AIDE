@@ -2,5 +2,8 @@
     <qresource prefix="/new/prefix1">
         <file>pngwing.com.png</file>
         <file>pngegg (2).png</file>
+        <file>without background.png</file>
+        <file>save.PNG</file>
+        <file>pngegg (3).png</file>
     </qresource>
 </RCC>

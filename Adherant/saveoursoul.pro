@@ -20,12 +20,14 @@ SOURCES += \
     adherant.cpp \
     connection.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    membre.cpp
 
 HEADERS += \
     adherant.h \
     connection.h \
-    mainwindow.h
+    mainwindow.h \
+    membre.h
 
 FORMS += \
     mainwindow.ui

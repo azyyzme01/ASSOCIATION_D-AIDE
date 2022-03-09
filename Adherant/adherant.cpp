@@ -12,24 +12,14 @@ Adherant::Adherant()
 }
 
 Adherant::Adherant(int id,QString nom,QString prenom,QString fonction,int tele,QString image)
-{this->id=id;
+{   this->id=id;
     this->nom=nom;
     this->prenom=prenom;
     this->fonction=fonction;
     this->tele=tele;
-    this->image=image; }
-int Adherant::getid(){return id;}
-QString Adherant::getnom(){return nom;}
-QString Adherant::getprenom(){return prenom;}
-QString Adherant::getfonction(){return fonction;}
-int Adherant::gettele(){return tele;}
-QString Adherant::getimage(){return image;}
-void Adherant::setid(int id){this->id=id;}
-void Adherant::setnom(QString nom){this->nom=nom;}
-void Adherant::setprenom(QString prenom){this->prenom=prenom;}
-void Adherant::setfonction(QString fonction){this->fonction=fonction;}
-void Adherant::settele(int tele){this->tele=tele;}
-void Adherant::setimage(QString image){this->image=image;}
+    this->image=image;
+}
+
 
 
 bool Adherant::ajouter()
@@ -38,7 +28,7 @@ bool Adherant::ajouter()
     QSqlQuery query;
     QString id_string= QString::number(id);
     QString tele_string= QString::number(tele);
-    query.prepare("INSERT INTO adherant (ID,NOM,PRENOM,FONCTION,TELEPHONE,IMAGE)"
+    query.prepare("INSERT INTO adherant (ID,NOM,PRENOM,FONCTION,TELE,IMAGE)"
                   "VALUES(:id, :nom, :prenom, :fonction, :tele, :image)");
     query.bindValue(":id",id_string);
     query.bindValue(":nom",nom);
@@ -88,7 +78,7 @@ bool Adherant::modifier()
     QSqlQuery query;
     QString res=QString::number(id);
     QString ress=QString::number(tele);
-    query.prepare("UPDATE  from adherant set nom=:nom,prenom=:prenom,fonction=:fonction,tele=:tele,image=:image where id=:id");
+    query.prepare("UPDATE   adherant set nom=:nom,prenom=:prenom,fonction=:fonction,tele=:tele,image=:image where id=:id");
 query.bindValue(":id",res);
 query.bindValue(":nom",nom);
 query.bindValue(":prenom",prenom);

@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "adherant.h"
+#include "membre.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -60,9 +61,22 @@ private slots:
 
     void on_pushButton_modifier_clicked();
 
+    void on_pushButton_afficher_adherant_clicked();
+
+    void on_ajouter_adherant_m_clicked();
+
+    void on_pushButton_afficher_m1_clicked();
+
+    void on_pushButton_modifier_m_clicked();
+
+    void on_pushButton_supprimer_m_clicked();
+
+    void on_pushButton_afficher_m2_clicked();
+
 private:
     Ui::MainWindow *ui;
     Adherant A;
+    Membre M;
 
 };
 #endif // MAINWINDOW_H

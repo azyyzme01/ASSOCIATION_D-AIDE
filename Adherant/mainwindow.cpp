@@ -3,18 +3,38 @@
 #include "adherant.h"
 #include "QMessageBox"
 #include "QIntValidator"
+#include "membre.h"
 
+#define EMAIL_RX "^[_a-z0-9-]+(\\.[_a-z0-9-]+)*@[a-z0-9-]+" \
+                 "(\\.[a-z0-9-]+)*(\\.[a-z]{2,4})$"
+#define NAME_RX "([A-Z][a-z]*)([\\s\\\'.][A-Z][a-z]*)*"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+
+
+
+        QRegExp rxEmail(EMAIL_RX);
+        QRegExpValidator *valiEmail = new QRegExpValidator(rxEmail, this);
+        ui->le_image_2->setValidator(valiEmail);
+
+        //Controle de saisie Nom
+        QRegExp rxName(NAME_RX);
+        QRegExpValidator *valiName = new QRegExpValidator(rxName, this);
+        ui->le_nom->setValidator(valiName);
+
+
+
+
     //controle de saisir
     ui->le_id->setValidator(new QIntValidator(100, 9999999, this));
     ui->le_tele->setValidator(new QIntValidator(100, 9999999, this));
 
-    ui->tableView->setModel(A.afficher());
+    ui->tableView_adherant_14->setModel(A.afficher());
 
 }
 
@@ -117,7 +137,7 @@ void MainWindow::on_ajouter_adherant_clicked()
             QMessageBox::information(nullptr,QObject::tr("OK"),
                                      QObject::tr("Ajout effectué\n"
                                                  "Click Cancel to exit."),QMessageBox::Cancel);
-            ui->tableView->setModel(A.afficher());
+            ui->tableView_adherant_14->setModel(A.afficher());
         }
         else
         {
@@ -138,30 +158,19 @@ void MainWindow::on_ajouter_adherant_clicked()
 
 void MainWindow::on_pushButton_supprimer_clicked()
 {
-    Adherant A1; A1.setid(ui->id_2->text().toInt());
-         bool test=A1.supprimer(A1.getid());
+    int id= ui->id_2->text().toInt();
+    bool test=A.supprimer(id);
+    if(test)
+    {
+        ui->tableView_2->setModel(A.afficher());
 
-         if (test)
-         {
+    QMessageBox::information(nullptr,QObject::tr("supprimer un Adherant"),QObject::tr("Adherant supprimé. \n ""click cancel to exit."),QMessageBox::Cancel);
+    }
 
 
-             QMessageBox::information(nullptr,QObject::tr("OK"),
-                                      QObject::tr("suppression effectué\n"
-                                                  "Click Cancel to exit."),QMessageBox::Cancel);
-         }
-         else
-         {
-             QMessageBox::critical(nullptr,QObject::tr("Warning"),
-                                   QObject::tr("supression non effectué\n"
-                                               "Click Cancel to exit."),QMessageBox::Cancel);
-         }
 
          ui->le_id->clear();
-         ui->le_tele->clear();
-         ui->le_nom->clear();
-         ui->le_prenom->clear();
-         ui->le_fonction->clear();
-         ui->le_image->clear();
+
 
 }
 
@@ -180,7 +189,7 @@ void MainWindow::on_pushButton_modifier_clicked()
     if(test)
     {
 
-      ui->tableView->setModel(A.afficher());
+      ui->tableView_adherant_14->setModel(A.afficher());
     QMessageBox::information(nullptr,QObject::tr("modifier un patient"),QObject::tr("success. \n ""click cancel to exit."),QMessageBox::Cancel);
 
     }
@@ -200,3 +209,112 @@ void MainWindow::on_pushButton_modifier_clicked()
 }
 
 
+
+void MainWindow::on_pushButton_afficher_clicked()
+{
+     ui->tableView_2->setModel(A.afficher());
+}
+
+void MainWindow::on_pushButton_afficher_adherant_clicked()
+{
+    ui->tableView_adherant_14->setModel(A.afficher());
+}
+
+void MainWindow::on_ajouter_adherant_m_clicked()
+{
+    int idm=ui->le_id_2->text().toInt();
+    QString nomm=ui->le_nom_2->text();
+    QString prenomm=ui->le_prenom_2->text();
+    QString fonctionm=ui->le_fonction_2->text();
+    int telem=ui->le_tele_2->text().toInt();
+    QString imagem=ui->le_image_2->text();
+    Membre M(idm,nomm,prenomm,fonctionm,telem,imagem);
+
+    bool test=M.ajouter();
+
+
+        if (test)
+        {
+
+
+            QMessageBox::information(nullptr,QObject::tr("OK"),
+                                     QObject::tr("Ajout effectué\n"
+                                                 "Click Cancel to exit."),QMessageBox::Cancel);
+            ui->tableView_m1->setModel(M.afficher());
+        }
+        else
+        {
+            QMessageBox::critical(nullptr,QObject::tr("Warning"),
+                                  QObject::tr("Ajout non effectué\n"
+                                              "Click Cancel to exit."),QMessageBox::Cancel);
+        }
+
+        ui->le_id_2->clear();
+        ui->le_tele_2->clear();
+        ui->le_nom_2->clear();
+        ui->le_prenom_2->clear();
+        ui->le_fonction_2->clear();
+        ui->le_image_2->clear();
+}
+
+void MainWindow::on_pushButton_afficher_m1_clicked()
+{
+    ui->tableView_m1->setModel(M.afficher());
+
+}
+
+void MainWindow::on_pushButton_modifier_m_clicked()
+{
+    int idm = ui->le_id_2->text().toInt();
+    int telem = ui->le_tele_2->text().toInt();
+    QString nomm=ui->le_nom_2->text();
+    QString prenomm = ui->le_prenom_2->text();
+    QString fonctionm = ui->le_fonction_2->text();
+    QString imagem = ui->le_image_2->text();
+    Membre M(idm,nomm,prenomm,fonctionm,telem,imagem);
+    bool test = M.modifier();
+    if(test)
+    {
+
+      ui->tableView_m1->setModel(M.afficher());
+    QMessageBox::information(nullptr,QObject::tr("modifier un Adherant"),QObject::tr("success. \n ""click cancel to exit."),QMessageBox::Cancel);
+
+    }
+    else
+    {
+        QMessageBox::critical(nullptr, QObject::tr("modifier un patient"),
+                    QObject::tr("erreur.\n"
+                                "Click Cancel to exit."), QMessageBox::Cancel);
+
+    }
+    ui->le_id_2->clear();
+    ui->le_tele_2->clear();
+    ui->le_nom_2->clear();
+    ui->le_prenom_2->clear();
+    ui->le_fonction_2->clear();
+    ui->le_image_2->clear();
+}
+
+
+void MainWindow::on_pushButton_supprimer_m_clicked()
+{
+    int idm= ui->id_3->text().toInt();
+    bool test=M.supprimer(idm);
+    if(test)
+    {
+        ui->tableView_m2->setModel(M.afficher());
+
+    QMessageBox::information(nullptr,QObject::tr("supprimer un Membre"),QObject::tr("Membre supprimé. \n ""click cancel to exit."),QMessageBox::Cancel);
+    }
+
+
+
+         ui->id_3->clear();
+
+}
+
+void MainWindow::on_pushButton_afficher_m2_clicked()
+{
+    ui->tableView_m2->setModel(M.afficher());
+
+}
