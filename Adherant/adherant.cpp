@@ -89,10 +89,10 @@ return query.exec();
 }
 
 
-QSqlQueryModel *Adherant::recherche(QString id)
+QSqlQueryModel *Adherant::recherche(QString value)
  {
      QSqlQueryModel * model= new QSqlQueryModel();
-     model->setQuery("select * from adherant where id LIKE '"+id+"%'");
+     model->setQuery("select * from adherant where id LIKE '"+value+"%' or nom LIKE '"+value+"%' or prenom LIKE '"+value+"%'");
 
 
      model->setHeaderData(0, Qt::Horizontal, QObject::tr("Identifiant"));
@@ -104,7 +104,7 @@ QSqlQueryModel *Adherant::recherche(QString id)
 
  return model;
 }
-QSqlQueryModel *Adherant::recherchen(QString nom)
+/*QSqlQueryModel *Adherant::recherchen(QString nom)
  {
      QSqlQueryModel * model= new QSqlQueryModel();
      model->setQuery("select * from adherant where nom LIKE '"+nom+"%'");
@@ -134,7 +134,7 @@ QSqlQueryModel *Adherant::recherchep(QString prenom)
      model->setHeaderData(5, Qt::Horizontal, QObject::tr("Image"));
 
  return model;
-}
+}*/
 
 
 

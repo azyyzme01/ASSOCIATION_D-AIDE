@@ -322,14 +322,14 @@ void MainWindow::on_pushButton_afficher_m2_clicked()
 
 void MainWindow::on_pushButton_rechercherA_clicked()
 {
-    QString id =ui->le_id->text();
-       ui->tableView_adherant_14->setModel(tempadherant.recherche(id));
+    QString value =ui->le_id_3->text();
+       ui->tableView_adherant_14->setModel(tempadherant.recherche(value));
 
-       QString nom =ui->le_nom->text();
+       /*QString nom =ui->le_nom->text();
           ui->tableView_adherant_14->setModel(tempadherant.recherchen(nom));
 
           QString prenom =ui->le_prenom->text();
-             ui->tableView_adherant_14->setModel(tempadherant.recherchep(prenom));
+             ui->tableView_adherant_14->setModel(tempadherant.recherchep(prenom));*/
 
 }
 
