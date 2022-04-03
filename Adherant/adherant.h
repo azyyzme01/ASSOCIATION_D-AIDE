@@ -23,9 +23,12 @@ bool ajouter();
 bool modifier();
 bool supprimer(int);
 QSqlQueryModel * afficher();
-
-
-
+QSqlQueryModel* recherche(QString);
+QSqlQueryModel* recherchen(QString);
+QSqlQueryModel* recherchep(QString);
+QSqlQueryModel *ordre_id_A();
+ QSqlQueryModel *ordre_nom_A();
+  QSqlQueryModel *ordre_prenom_A();
 private:
     int id, tele;
     QString nom, prenom, fonction, image;

@@ -89,3 +89,97 @@ return query.exec();
 }
 
 
+QSqlQueryModel *Adherant::recherche(QString id)
+ {
+     QSqlQueryModel * model= new QSqlQueryModel();
+     model->setQuery("select * from adherant where id LIKE '"+id+"%'");
+
+
+     model->setHeaderData(0, Qt::Horizontal, QObject::tr("Identifiant"));
+     model->setHeaderData(1, Qt::Horizontal, QObject::tr("Nom"));
+     model->setHeaderData(2, Qt::Horizontal, QObject::tr("Prenom"));
+     model->setHeaderData(3, Qt::Horizontal, QObject::tr("Fonction"));
+     model->setHeaderData(4, Qt::Horizontal, QObject::tr("Tele"));
+     model->setHeaderData(5, Qt::Horizontal, QObject::tr("Image"));
+
+ return model;
+}
+QSqlQueryModel *Adherant::recherchen(QString nom)
+ {
+     QSqlQueryModel * model= new QSqlQueryModel();
+     model->setQuery("select * from adherant where nom LIKE '"+nom+"%'");
+
+
+     model->setHeaderData(0, Qt::Horizontal, QObject::tr("Identifiant"));
+     model->setHeaderData(1, Qt::Horizontal, QObject::tr("Nom"));
+     model->setHeaderData(2, Qt::Horizontal, QObject::tr("Prenom"));
+     model->setHeaderData(3, Qt::Horizontal, QObject::tr("Fonction"));
+     model->setHeaderData(4, Qt::Horizontal, QObject::tr("Tele"));
+     model->setHeaderData(5, Qt::Horizontal, QObject::tr("Image"));
+
+ return model;
+}
+
+QSqlQueryModel *Adherant::recherchep(QString prenom)
+ {
+     QSqlQueryModel * model= new QSqlQueryModel();
+     model->setQuery("select * from adherant where prenom LIKE '"+prenom+"%'");
+
+
+     model->setHeaderData(0, Qt::Horizontal, QObject::tr("Identifiant"));
+     model->setHeaderData(1, Qt::Horizontal, QObject::tr("Nom"));
+     model->setHeaderData(2, Qt::Horizontal, QObject::tr("Prenom"));
+     model->setHeaderData(3, Qt::Horizontal, QObject::tr("Fonction"));
+     model->setHeaderData(4, Qt::Horizontal, QObject::tr("Tele"));
+     model->setHeaderData(5, Qt::Horizontal, QObject::tr("Image"));
+
+ return model;
+}
+
+
+
+
+
+
+
+
+QSqlQueryModel *Adherant::ordre_id_A()
+     {
+         QSqlQueryModel *model=new QSqlQueryModel();
+         model->setQuery("select * from adherant  order by id" );
+         model->setHeaderData(0, Qt::Horizontal, QObject::tr("Identifiant"));
+         model->setHeaderData(1, Qt::Horizontal, QObject::tr("Nom"));
+         model->setHeaderData(2, Qt::Horizontal, QObject::tr("Prenom"));
+         model->setHeaderData(3, Qt::Horizontal, QObject::tr("Fonction"));
+         model->setHeaderData(4, Qt::Horizontal, QObject::tr("Tele"));
+         model->setHeaderData(5, Qt::Horizontal, QObject::tr("Image"));
+
+         return model;
+     }
+  QSqlQueryModel *Adherant::ordre_nom_A()
+     {
+         QSqlQueryModel *model=new QSqlQueryModel();
+         model->setQuery("select * from adherant  order by nom" );
+         model->setHeaderData(0, Qt::Horizontal, QObject::tr("Identifiant"));
+         model->setHeaderData(1, Qt::Horizontal, QObject::tr("Nom"));
+         model->setHeaderData(2, Qt::Horizontal, QObject::tr("Prenom"));
+         model->setHeaderData(3, Qt::Horizontal, QObject::tr("Fonction"));
+         model->setHeaderData(4, Qt::Horizontal, QObject::tr("Tele"));
+         model->setHeaderData(5, Qt::Horizontal, QObject::tr("Image"));
+
+         return model;
+     }
+  QSqlQueryModel *Adherant::ordre_prenom_A()
+     {
+         QSqlQueryModel *model=new QSqlQueryModel();
+         model->setQuery("select * from adherant  order by prenom" );
+         model->setHeaderData(0, Qt::Horizontal, QObject::tr("Identifiant"));
+         model->setHeaderData(1, Qt::Horizontal, QObject::tr("Nom"));
+         model->setHeaderData(2, Qt::Horizontal, QObject::tr("Prenom"));
+         model->setHeaderData(3, Qt::Horizontal, QObject::tr("Fonction"));
+         model->setHeaderData(4, Qt::Horizontal, QObject::tr("Tele"));
+         model->setHeaderData(5, Qt::Horizontal, QObject::tr("Image"));
+
+         return model;
+     }
+

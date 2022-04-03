@@ -318,3 +318,32 @@ void MainWindow::on_pushButton_afficher_m2_clicked()
     ui->tableView_m2->setModel(M.afficher());
 
 }
+
+
+void MainWindow::on_pushButton_rechercherA_clicked()
+{
+    QString id =ui->le_id->text();
+       ui->tableView_adherant_14->setModel(tempadherant.recherche(id));
+
+       QString nom =ui->le_nom->text();
+          ui->tableView_adherant_14->setModel(tempadherant.recherchen(nom));
+
+          QString prenom =ui->le_prenom->text();
+             ui->tableView_adherant_14->setModel(tempadherant.recherchep(prenom));
+
+}
+
+
+
+void MainWindow::on_pushButton_trierA_clicked()
+{
+    QString tri=ui->comboBox66->currentText();
+
+            if(tri=="id"){
+          ui->tableView_adherant_14->setModel(tempadherant.ordre_id_A());}
+            else if(tri=="nom"){
+                ui->tableView_adherant_14->setModel(tempadherant.ordre_nom_A());}
+            else if(tri=="prenom"){
+     ui->tableView_adherant_14->setModel(tempadherant.ordre_prenom_A());}
+
+}

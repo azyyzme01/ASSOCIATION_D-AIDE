@@ -73,10 +73,19 @@ private slots:
 
     void on_pushButton_afficher_m2_clicked();
 
+    void on_pushButton_modifier_3_clicked();
+
+    void on_pushButton_rechercherA_clicked();
+
+    void on_pushButton_rechercherA_2_clicked();
+
+    void on_pushButton_trierA_clicked();
+
 private:
     Ui::MainWindow *ui;
     Adherant A;
     Membre M;
+    Adherant tempadherant;
 
 };
 #endif // MAINWINDOW_H

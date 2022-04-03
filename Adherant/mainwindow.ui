@@ -31,7 +31,7 @@
 background-color: rgb(142, 255, 248);</string>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="acceuil">
      <property name="styleSheet">
@@ -179,14 +179,15 @@ background-color: rgb(142, 255, 248);</string>
      <widget class="QToolBox" name="toolBox_4">
       <property name="geometry">
        <rect>
-        <x>70</x>
-        <y>100</y>
+        <x>50</x>
+        <y>30</y>
         <width>1031</width>
-        <height>491</height>
+        <height>561</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);</string>
+       <string notr="true">background-color: rgb(255, 255, 255);
+background-color: rgb(156, 239, 255);</string>
       </property>
       <property name="currentIndex">
        <number>0</number>
@@ -197,7 +198,7 @@ background-color: rgb(142, 255, 248);</string>
          <x>0</x>
          <y>0</y>
          <width>1031</width>
-         <height>401</height>
+         <height>471</height>
         </rect>
        </property>
        <attribute name="icon">
@@ -410,7 +411,7 @@ color :white;
           </rect>
          </property>
          <property name="text">
-          <string>image</string>
+          <string>mail</string>
          </property>
         </widget>
        </widget>
@@ -427,7 +428,7 @@ color :white;
        <widget class="QPushButton" name="pushButton_afficher_adherant">
         <property name="geometry">
          <rect>
-          <x>330</x>
+          <x>510</x>
           <y>370</y>
           <width>111</width>
           <height>28</height>
@@ -449,6 +450,93 @@ color :white;
          <string>Afficher</string>
         </property>
        </widget>
+       <widget class="QPushButton" name="pushButton_rechercherA">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>370</y>
+          <width>111</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+padding: 5px;
+border-radius: 5px;
+background-color:rgb(101, 190, 155);
+font-weight: bold;
+}
+QPushButton:hover
+{
+color :white;
+}</string>
+        </property>
+        <property name="text">
+         <string>rechercher</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_trierA">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>390</y>
+          <width>111</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+padding: 5px;
+border-radius: 5px;
+background-color:rgb(101, 190, 155);
+font-weight: bold;
+}
+QPushButton:hover
+{
+color :white;
+}</string>
+        </property>
+        <property name="text">
+         <string>TRIER</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox66">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>390</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+padding: 5px;
+border-radius: 5px;
+background-color:rgb(101, 190, 155);
+font-weight: bold;
+}
+QComboBox:hover
+{
+color :white;
+}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>id</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>nom</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>prenom</string>
+         </property>
+        </item>
+       </widget>
       </widget>
       <widget class="QWidget" name="page_14">
        <property name="geometry">
@@ -456,7 +544,7 @@ color :white;
          <x>0</x>
          <y>0</y>
          <width>1031</width>
-         <height>401</height>
+         <height>471</height>
         </rect>
        </property>
        <attribute name="label">
@@ -548,31 +636,6 @@ color :white;
          </property>
         </widget>
        </widget>
-       <widget class="QPushButton" name="pushButton_modifier_3">
-        <property name="geometry">
-         <rect>
-          <x>410</x>
-          <y>350</y>
-          <width>111</width>
-          <height>28</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-padding: 5px;
-border-radius: 5px;
-background-color:rgb(101, 190, 155);
-font-weight: bold;
-}
-QPushButton:hover
-{
-color :white;
-}</string>
-        </property>
-        <property name="text">
-         <string>rechercher</string>
-        </property>
-       </widget>
        <widget class="QPushButton" name="pushButton_modifier_4">
         <property name="geometry">
          <rect>
@@ -640,7 +703,7 @@ color :white;
          <x>0</x>
          <y>0</y>
          <width>1031</width>
-         <height>401</height>
+         <height>471</height>
         </rect>
        </property>
        <attribute name="label">
@@ -949,8 +1012,8 @@ color :white;
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>1031</width>
-         <height>401</height>
+         <width>100</width>
+         <height>30</height>
         </rect>
        </property>
        <attribute name="label">
@@ -1133,8 +1196,8 @@ color :white;
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>1031</width>
-         <height>401</height>
+         <width>100</width>
+         <height>30</height>
         </rect>
        </property>
        <attribute name="label">
@@ -1177,8 +1240,8 @@ color :white;
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>971</width>
-         <height>391</height>
+         <width>100</width>
+         <height>30</height>
         </rect>
        </property>
        <attribute name="icon">
@@ -1743,8 +1806,8 @@ color :white;
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>971</width>
-         <height>361</height>
+         <width>100</width>
+         <height>30</height>
         </rect>
        </property>
        <attribute name="icon">
@@ -2100,8 +2163,8 @@ color :white;
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>971</width>
-         <height>361</height>
+         <width>100</width>
+         <height>30</height>
         </rect>
        </property>
        <attribute name="icon">
@@ -2158,8 +2221,8 @@ color :white;
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>971</width>
-         <height>361</height>
+         <width>100</width>
+         <height>30</height>
         </rect>
        </property>
        <attribute name="icon">
@@ -2393,8 +2456,8 @@ color :white;
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>971</width>
-         <height>361</height>
+         <width>100</width>
+         <height>30</height>
         </rect>
        </property>
        <attribute name="icon">
