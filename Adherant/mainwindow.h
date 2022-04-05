@@ -83,6 +83,10 @@ private slots:
 
     void on_pushButton_modifier_4_clicked();
 
+    void on_comboBox66_activated(const QString &arg1);
+
+    void on_pushButton_modifier_5_clicked();
+
 private:
     Ui::MainWindow *ui;
     Adherant A;

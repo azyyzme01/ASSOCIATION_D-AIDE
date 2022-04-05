@@ -7,6 +7,8 @@
 #include <QDesktopServices>
 #include <QFileDialog>
 #include <QPainter>
+#include<QPrinter>
+#include<QPrintDialog>
 #include "membre.h"
 
 #define EMAIL_RX "^[_a-z0-9-]+(\\.[_a-z0-9-]+)*@[a-z0-9-]+" \
@@ -406,4 +408,17 @@ void MainWindow::on_pushButton_modifier_4_clicked()
 
 
 
+}
+
+
+
+void MainWindow::on_pushButton_modifier_5_clicked()
+{
+    QPrinter rd;
+    QPrintDialog d(&rd,this);
+    d.setWindowTitle("print adherant");
+
+    d.addEnabledOption(QAbstractPrintDialog::PrintSelection);
+    if(d.exec()!=QDialog::Accepted)
+        return;
 }
