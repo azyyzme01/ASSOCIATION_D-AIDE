@@ -3,6 +3,10 @@
 #include "adherant.h"
 #include "QMessageBox"
 #include "QIntValidator"
+#include <QPdfWriter>
+#include <QDesktopServices>
+#include <QFileDialog>
+#include <QPainter>
 #include "membre.h"
 
 #define EMAIL_RX "^[_a-z0-9-]+(\\.[_a-z0-9-]+)*@[a-z0-9-]+" \
@@ -345,5 +349,61 @@ void MainWindow::on_pushButton_trierA_clicked()
                 ui->tableView_adherant_14->setModel(tempadherant.ordre_nom_A());}
             else if(tri=="prenom"){
      ui->tableView_adherant_14->setModel(tempadherant.ordre_prenom_A());}
+
+}
+
+void MainWindow::on_pushButton_modifier_4_clicked()
+{
+
+
+
+    QString dir = QFileDialog::getExistingDirectory(this, tr("Open Directory"),"/home/Desktop",QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks);
+          qDebug()<<dir;
+          QPdfWriter pdf(dir+"/Les Adhérants.pdf");
+          QPainter painter(&pdf);
+          int i = 4000;
+          painter.setPen(Qt::black);
+          painter.setFont(QFont("Arial", 30));
+          painter.drawText(1200,1200,"LA LISTE DES ADHERANTS");
+          painter.setPen(Qt::black);
+          painter.setFont(QFont("Arial", 50));
+          painter.drawPixmap(QRect(4400,1200,918,1027),QPixmap(":/new/prefix1/save.PNG"));
+          painter.drawRect(0,3000,9600,500);
+          painter.setFont(QFont("Arial", 9));
+          painter.setPen(Qt::blue);
+          painter.drawText(300,3300,"Identifiant");
+          painter.drawText(2300,3300,"Nom");
+          painter.drawText(4300,3300,"prenom");
+          painter.drawText(6300,3300,"fonction");
+          painter.drawText(8300,3300,"numero");
+
+          QSqlQuery query;
+          query.prepare("SELECT * FROM adherant ");
+          query.exec();
+          while (query.next())
+          {
+              painter.drawText(300,i,query.value(0).toString());
+              painter.drawText(2300,i,query.value(1).toString());
+              painter.drawText(4300,i,query.value(2).toString());
+              painter.drawText(6300,i,query.value(3).toString());
+              painter.drawText(8300,i,query.value(4).toString());
+              i = i +500;
+          }
+
+
+
+          int reponse = QMessageBox::question(this, "Génerer PDF", "PDF Enregistré.\nVous Voulez Affichez Le PDF ?", QMessageBox::Yes |  QMessageBox::No);
+          if (reponse == QMessageBox::Yes)
+          {
+              QDesktopServices::openUrl(QUrl::fromLocalFile(dir+"/Les Adhérants.pdf"));
+              painter.end();
+          }
+          else
+          {
+              painter.end();
+          }
+
+
+
 
 }

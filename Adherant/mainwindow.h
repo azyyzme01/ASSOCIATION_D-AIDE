@@ -81,6 +81,8 @@ private slots:
 
     void on_pushButton_trierA_clicked();
 
+    void on_pushButton_modifier_4_clicked();
+
 private:
     Ui::MainWindow *ui;
     Adherant A;
