@@ -4,10 +4,21 @@
 #include <QMainWindow>
 #include "adherant.h"
 #include "membre.h"
+#include <QFileDialog>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
+
+//***********camera*******
+class QCamera;
+class QCameraViewfinder;
+class QCameraImageCapture;
+class QVBoxLayout;
+class QMenu;
+class QAction;
+//************************
+
 
 class MainWindow : public QMainWindow
 {
@@ -92,6 +103,15 @@ private:
     Adherant A;
     Membre M;
     Adherant tempadherant;
+
+    QCamera *mCamera;
+        QCameraViewfinder *mCameraViewfinder;
+        QCameraImageCapture *mCameraImageCapture;
+        QVBoxLayout *mlayout;
+        QMenu *mOptionsMenu;
+        QAction *mEncenderAction;
+        QAction *mApagarAction;
+        QAction *mcapturerAction;
 
 };
 #endif // MAINWINDOW_H

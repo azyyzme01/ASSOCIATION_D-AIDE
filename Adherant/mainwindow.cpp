@@ -9,6 +9,18 @@
 #include <QPainter>
 #include<QPrinter>
 #include<QPrintDialog>
+#include <QTextDocument>
+#include<QTextStream>
+#include <QDebug>
+//****************camera******
+#include<QCamera>
+#include<QCameraViewfinder>
+#include<QCameraImageCapture>
+#include<QVBoxLayout>
+#include<QMenu>
+#include<QAction>
+#include<QFileDialog>
+ //**********************
 #include "membre.h"
 
 #define EMAIL_RX "^[_a-z0-9-]+(\\.[_a-z0-9-]+)*@[a-z0-9-]+" \
@@ -21,6 +33,47 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
+    //************************camera**********
+    mCamera = new QCamera(this);
+       mCameraViewfinder= new QCameraViewfinder(this);
+       mCameraImageCapture = new QCameraImageCapture(mCamera , this);
+       mlayout = new QVBoxLayout;
+       mOptionsMenu= new QMenu("options",this);
+       mEncenderAction= new QAction("Ouvrir la camera",this);
+       mApagarAction= new QAction("stoper",this);
+       mcapturerAction=new QAction("Capturer",this);
+       mOptionsMenu->addActions({mEncenderAction,mApagarAction,mcapturerAction});
+       mCamera->setViewfinder(mCameraViewfinder);
+       ui->options ->setMenu(mOptionsMenu);
+       mlayout->addWidget(mCameraViewfinder);
+       mlayout->setMargin(0);
+       ui->scrollArea->setLayout(mlayout);
+       connect(mEncenderAction, &QAction::triggered ,[&](){
+           mCamera->start();
+       });
+
+       connect(mApagarAction,&QAction::triggered,[&](){
+           mCamera->stop();
+       });
+
+       connect(mcapturerAction,&QAction::triggered,[&](){
+           auto filename = QFileDialog:: getSaveFileName(this,"capturar","/",
+                                                               "imagen (.jpg;.jpeg)");
+                 if(filename.isEmpty()){
+                     return;
+                 }
+           mCameraImageCapture->setCaptureDestination(QCameraImageCapture::CaptureToFile);
+       QImageEncoderSettings imageEncoderSettings;
+       imageEncoderSettings.setCodec("image/jpeg");
+       imageEncoderSettings.setResolution(1600,1200);
+         mCameraImageCapture->setEncodingSettings(imageEncoderSettings);
+         mCamera->setCaptureMode(QCamera::CaptureStillImage);
+         mCamera->start();
+         mCamera->searchAndLock();
+         mCameraImageCapture->capture(filename);
+         mCamera->unlock();
+       });
+    //*************************************
 
 
 
@@ -421,4 +474,20 @@ void MainWindow::on_pushButton_modifier_5_clicked()
     d.addEnabledOption(QAbstractPrintDialog::PrintSelection);
     if(d.exec()!=QDialog::Accepted)
         return;
+}
+
+void MainWindow::on_pushButton_rechercherA_2_clicked()
+{
+    QString filename = QFileDialog::getOpenFileName(this,tr("choose"), "" , tr("image (*.png *.jpg *.jpeg *.bmp *.gif)"));
+    if ( QString::compare(filename, QString()) != 0 )
+    {
+        QImage image;
+        bool valid =image.load(filename);
+        if (valid)
+        {
+
+            image =image.scaledToWidth(ui->le_image->width(),Qt::SmoothTransformation);
+            ui->le_image->setPixmap(QPixmap::fromImage(image));
+        }
+    }
 }
