@@ -78,4 +78,38 @@ DISTFILES += \
     ../img ayed/statistics.png \
     ../img ayed/web-search-engine.png \
     Obit.qss \
+    img ayed/add (1).png \
+    img ayed/add.png \
+    img ayed/age.png \
+    img ayed/archive.png \
+    img ayed/back (1).png \
+    img ayed/back.png \
+    img ayed/calendar.png \
+    img ayed/camera.png \
+    img ayed/cardiogram.png \
+    img ayed/clear.png \
+    img ayed/clock.png \
+    img ayed/delivery (1).png \
+    img ayed/delivery-man.png \
+    img ayed/delivery.png \
+    img ayed/email.png \
+    img ayed/flask.png \
+    img ayed/foldable-phone.png \
+    img ayed/image (1).png \
+    img ayed/image.png \
+    img ayed/loop.png \
+    img ayed/medical-equipment (1).png \
+    img ayed/medical-equipment.png \
+    img ayed/notes.png \
+    img ayed/packages.png \
+    img ayed/pdf.png \
+    img ayed/phone-call.png \
+    img ayed/printer.png \
+    img ayed/real-estate.png \
+    img ayed/report (1).png \
+    img ayed/report.png \
+    img ayed/search.png \
+    img ayed/sort.png \
+    img ayed/statistics.png \
+    img ayed/web-search-engine.png \
     pngegg (2).png
