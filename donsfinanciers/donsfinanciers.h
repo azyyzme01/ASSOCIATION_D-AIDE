@@ -2,6 +2,7 @@
 #define DONSFINANCIERS_H
 #include<QString>
 #include<QSqlQueryModel>
+
 class donsfinanciers
 {
 public:
@@ -19,6 +20,14 @@ public:
     QSqlQueryModel* afficher();
     bool supprimer(int);
     bool modifier(int idrech);
+    QSqlQueryModel* trier_nom();
+    QSqlQueryModel *rechercher(QString);
+    QSqlQueryModel* statistiques();
+    //void statistiques(QWidget);
+    QSqlQueryModel *rech(QString,QString);
+    QSqlQueryModel *ordre_op();
+    QSqlQueryModel *ordre_somme();
+    QSqlQueryModel *ordre_nom();
 
 
 private:
@@ -30,3 +39,5 @@ private:
 };
 
 #endif // DONSFINANCIERS_H
+
+

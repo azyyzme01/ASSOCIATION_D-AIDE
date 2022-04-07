@@ -3,6 +3,16 @@
 
 #include <QMainWindow>
 #include"donsfinanciers.h"
+#include <QSqlQuery>
+#include<QSqlQueryModel>
+#include<QCompleter>
+#include <QSqlQuery>
+#include <QtCharts>
+#include <QChartView>
+#include <QPieSeries>
+#include <QDialog>
+#include <QWidget>
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -52,9 +62,34 @@ private slots:
     void on_bp_supprimer_clicked();
 
     void on_updatebtn_clicked();
+    void on_pushButton_20_clicked();
+    void on_pushButton_retour_modifier_clicked();
+
+
+
+    void on_recherche_clicked();
+
+    void on_Trier_clicked();
+
+    void on_tableView_activated(const QModelIndex &index);
+
+    void on_exel_clicked();
+
+    void on_mail_clicked();
+
+    void on_id_recherche_textChanged(const QString &arg1);
+
+    void on_b_email_clicked();
 
 private:
     Ui::MainWindow *ui;
     donsfinanciers df;
+    donsfinanciers tempadherant;
+    donsfinanciers tempf;
+    //donsfinanciers statistiques();
+    QList<qreal> stat_budget();
+        QList <QString> stat_bud();
+        donsfinanciers statistique(stat) ; ;
+
 };
 #endif // MAINWINDOW_H

@@ -1,5 +1,8 @@
 QT       += core gui
+QT       += core gui charts
 QT       +=  sql
+QT       += network
+PKGCONFIG += openssl
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets sql
 
@@ -20,12 +23,14 @@ SOURCES += \
     connection.cpp \
     donsfinanciers.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    smtp.cpp
 
 HEADERS += \
     connection.h \
     donsfinanciers.h \
-    mainwindow.h
+    mainwindow.h \
+    smtp.h
 
 FORMS += \
     mainwindow.ui
