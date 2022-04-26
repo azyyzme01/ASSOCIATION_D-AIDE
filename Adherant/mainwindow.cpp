@@ -95,11 +95,48 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->tableView_adherant_14->setModel(A.afficher());
 
+    int ret=AR.connect_arduino(); // lancer la connexion à arduino
+    switch(ret){
+    case(0):qDebug()<< "arduino is available and connected to : "<< AR.getarduino_port_name();
+        break;
+    case(1):qDebug() << "arduino is available but not connected to :" <<AR.getarduino_port_name();
+       break;
+    case(-1):qDebug() << "arduino is not available";
+    }
+     QObject::connect(AR.getserial(),SIGNAL(readyRead()),this,SLOT(update_label())); // permet de lancer
+     //le slot update_label suite à la reception du signal readyRead (reception des données).
+
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::update_label()
+{
+    //data=A.read_from_arduino();
+    data.append(AR.read_from_arduino());
+        if(data[data.size()-1]=='\n') {
+            data.remove(data.size()-2,2);
+
+           // we're full
+            qDebug()<<data;
+           bool test=A.rechercher_arduino(data);
+           qDebug()<<test;
+           // bool test=true;
+            if(test==true){
+                AR.write_to_arduino("1");
+            }
+            else
+                AR.write_to_arduino("0");
+
+            data.clear();
+
+        }
+
+
+
 }
 
 

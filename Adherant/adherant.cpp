@@ -104,6 +104,20 @@ QSqlQueryModel *Adherant::recherche(QString value)
 
  return model;
 }
+bool Adherant::rechercher_arduino(QByteArray data)
+{
+
+    QSqlQueryModel *model=new QSqlQueryModel();
+    QSqlQuery query;
+    //QString res = QString::number(data);
+    query.prepare("SELECT * FROM ADHERANT WHERE ID ="+data);
+    //query.bindValue(":data",data.toStdString());
+    query.exec();
+    model->setQuery(query);
+
+
+        return model->rowCount()>=1;
+   }
 /*QSqlQueryModel *Adherant::recherchen(QString nom)
  {
      QSqlQueryModel * model= new QSqlQueryModel();

@@ -194,8 +194,8 @@ font: 8pt &quot;Eras Bold ITC&quot;;</string>
      <widget class="QToolBox" name="toolBox_4">
       <property name="geometry">
        <rect>
-        <x>50</x>
-        <y>20</y>
+        <x>20</x>
+        <y>10</y>
         <width>1031</width>
         <height>591</height>
        </rect>
@@ -206,7 +206,7 @@ font: 8pt &quot;Eras Bold ITC&quot;;</string>
 	border-color: #000000;</string>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="page_10">
        <property name="geometry">
@@ -214,7 +214,7 @@ font: 8pt &quot;Eras Bold ITC&quot;;</string>
          <x>0</x>
          <y>0</y>
          <width>1031</width>
-         <height>501</height>
+         <height>471</height>
         </rect>
        </property>
        <attribute name="icon">
@@ -518,7 +518,7 @@ font: 8pt &quot;Eras Bold ITC&quot;;</string>
        <widget class="QPushButton" name="pushButton_afficher_adherant">
         <property name="geometry">
          <rect>
-          <x>510</x>
+          <x>430</x>
           <y>370</y>
           <width>111</width>
           <height>28</height>
@@ -539,7 +539,7 @@ font: 8pt &quot;Eras Bold ITC&quot;;</string>
        <widget class="QPushButton" name="pushButton_rechercherA">
         <property name="geometry">
          <rect>
-          <x>700</x>
+          <x>630</x>
           <y>370</y>
           <width>111</width>
           <height>28</height>
@@ -625,6 +625,49 @@ font: 8pt &quot;Eras Bold ITC&quot;;</string>
 	border-color: #4a4c68;</string>
         </property>
        </widget>
+       <widget class="QLineEdit" name="le_id_4">
+        <property name="geometry">
+         <rect>
+          <x>840</x>
+          <y>420</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #38394e;
+	color: #c1c1c1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #4a4c68;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>770</x>
+          <y>420</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Nom</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>770</x>
+          <y>370</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Prénom</string>
+        </property>
+       </widget>
       </widget>
       <widget class="QWidget" name="page_14">
        <property name="geometry">
@@ -632,7 +675,7 @@ font: 8pt &quot;Eras Bold ITC&quot;;</string>
          <x>0</x>
          <y>0</y>
          <width>1031</width>
-         <height>501</height>
+         <height>471</height>
         </rect>
        </property>
        <attribute name="label">
@@ -787,7 +830,7 @@ font: 8pt &quot;Eras Bold ITC&quot;;</string>
          <x>0</x>
          <y>0</y>
          <width>1031</width>
-         <height>501</height>
+         <height>471</height>
         </rect>
        </property>
        <attribute name="label">
@@ -901,6 +944,53 @@ QPushButton {
         </property>
         <property name="text">
          <string>Les Options</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_18">
+       <attribute name="label">
+        <string>Parking</string>
+       </attribute>
+       <widget class="QPushButton" name="pushButton_15">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>190</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #ff9c2b;
+	color: #000000;
+	font-weight: bold;
+	border-style: solid;
+	border-color: #000000;
+	padding: 6px;</string>
+        </property>
+        <property name="text">
+         <string>OPEN</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_16">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>190</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #ff9c2b;
+	color: #000000;
+	font-weight: bold;
+	border-style: solid;
+	border-color: #000000;
+	padding: 6px;</string>
+        </property>
+        <property name="text">
+         <string>CLOSE</string>
         </property>
        </widget>
       </widget>

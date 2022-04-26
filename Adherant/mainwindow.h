@@ -1,6 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include "arduino.h"
 #include <QMainWindow>
 #include "adherant.h"
 #include "membre.h"
@@ -29,6 +29,8 @@ public:
     ~MainWindow();
 
 private slots:
+
+     void update_label();
     void on_adherant_clicked();
 
     void on_famille_clicked();
@@ -112,6 +114,9 @@ private:
         QAction *mEncenderAction;
         QAction *mApagarAction;
         QAction *mcapturerAction;
+        QByteArray data; // variable contenant les données reçues
+
+        arduino AR; // objet temporaire
 
 };
 #endif // MAINWINDOW_H

@@ -1,5 +1,6 @@
 QT       += core gui sql printsupport
 QT       +=  sql
+QT +=serialport
 QT       += core gui multimedia multimediawidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -19,6 +20,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     adherant.cpp \
+    arduino.cpp \
     connection.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -26,6 +28,7 @@ SOURCES += \
 
 HEADERS += \
     adherant.h \
+    arduino.h \
     connection.h \
     mainwindow.h \
     membre.h
@@ -102,6 +105,7 @@ DISTFILES += \
     img ayed/medical-equipment.png \
     img ayed/notes.png \
     img ayed/packages.png \
+    img ayed/pdf.png \
     img ayed/pdf.png \
     img ayed/phone-call.png \
     img ayed/printer.png \

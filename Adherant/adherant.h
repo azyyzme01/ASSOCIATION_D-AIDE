@@ -24,6 +24,7 @@ bool modifier();
 bool supprimer(int);
 QSqlQueryModel * afficher();
 QSqlQueryModel* recherche(QString);
+bool rechercher_arduino(QByteArray );
 //QSqlQueryModel* recherchen(QString);
 //QSqlQueryModel* recherchep(QString);
 QSqlQueryModel *ordre_id_A();
